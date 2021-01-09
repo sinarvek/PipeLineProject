@@ -24,7 +24,7 @@ stages
  }
  stage('Test2 on slave machine')
  {
- agent {label "WS"}
+ agent {label "master"}
  steps {echo "tested on slave machine" }
  }
  }
