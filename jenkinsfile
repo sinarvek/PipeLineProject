@@ -19,7 +19,7 @@ stages
  {
  stage('Test1 on master')
  {
- agent {label " master"}
+ agent {label "master"}
  steps {bat'Stage2.bat' }
  }
  stage('Test2 on slave machine')
