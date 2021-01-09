@@ -32,7 +32,7 @@ stages
  stage('Deploy')
  {
  agent {label "master"}
- steps {bat 'Stage3.bat' }
+ steps { echo "Hello" }
  }
 }
 
