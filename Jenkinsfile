@@ -25,14 +25,14 @@ stages
  stage('Test2 on slave machine')
  {
  agent {label "WS"}
- steps {echo "tested on slave machine" }
+ steps {bat'Stage3.bat' }
  }
  }
  }
  stage('Deploy')
  {
  agent {label "master"}
- steps { echo "Hello" }
+ steps {bat'Stage3.bat'}
  }
 }
 
